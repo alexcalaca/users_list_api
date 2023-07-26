@@ -1,3 +1,27 @@
 // Place all the styles related to the Api::V1::Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+/* app/assets/stylesheets/users.css */
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.paginate {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
