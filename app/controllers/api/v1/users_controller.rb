@@ -15,5 +15,7 @@ class Api::V1::UsersController < ApplicationController
         email: user_data['email']
       )
     end
+
+    @users = @users.paginate(page: params[:page], per_page: 10)
   end
 end
