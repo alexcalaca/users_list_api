@@ -1,4 +1,9 @@
 <h1>Users</h1>
+<%= form_tag api_v1_users_index_path, method: :get do %>
+  <%= text_field_tag :query, params[:query], placeholder: 'Search by name' %>
+  <%= submit_tag 'Search' %>
+<% end %>
+<hr/>
 <table>
   <thead>
     <tr>
