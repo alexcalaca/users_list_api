@@ -4,5 +4,5 @@ Rails.application.routes.draw do
       get 'users/index'
     end
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'users/index', to: 'api/v1/users#index'
 end
